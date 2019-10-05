@@ -1,15 +1,25 @@
 import React from 'react';
-import { Grid, Header, Title, Body, Footer } from '../../elements';
-import styles from './styles';
+import { Main, Header, Title, Para, Body, Footer, Button } from '../../elements';
 
 export default () => (
-  <center style={styles.container}>
-    <Grid style={styles.main}>
-      <Header />
-      <Body>
-        <Title>heyyyyy {`{{ name }}`}</Title>
-      </Body>
-      <Footer />
-    </Grid>
-  </center>
+  <Main>
+    <Header />
+    <Body>
+      <Title>Reset Your Password</Title>
+      <Para color="gray">
+        You’re receiving this email because you’ve requested to
+        reset your foodstack password.
+      </Para>
+      <Para fontStyles={{ fontWeight: '600' }}>
+        Click the link below to reset your password.
+      </Para>
+      <Button>
+        Reset Password
+      </Button>
+    </Body>
+    <Footer />
+  </Main>
 );
+
+// how to refer to a sg variable:
+// {`{{ name }}`}

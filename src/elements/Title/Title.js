@@ -1,30 +1,11 @@
 import React from 'react';
 import Grid from '../Grid/Grid';
+import styles from './styles';
 
-const style = {
-
-  wrapper: {
-    width: 'auto',
-    margin: '0 auto',
-  },
-
-  title: {
-    fontSize: '24px',
-    fontWeight: 'bold',
-    marginTop: '5px',
-    marginBottom: '10px',
-  },
-
-};
-
-function Title({ children }) {
-  return (
-    <Grid style={style.wrapper}>
-      <h1 style={style.title} className="title-heading">
-        {children}
-      </h1>
-    </Grid>
-  );
-}
-
-export default Title;
+export default ({ children, wrapperStyles = {}, titleStyles = {} }) => (
+  <Grid style={{ ...styles.wrapper, ...wrapperStyles }}>
+    <h1 style={{ ...styles.title, ...titleStyles }} className="title-heading">
+      {children}
+    </h1>
+  </Grid>
+);

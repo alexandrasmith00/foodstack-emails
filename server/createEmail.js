@@ -31,7 +31,7 @@ function getFile(relativePath) {
  */
 function createEmail(name, data) {
   return Promise.all([
-    getFile('../src/inlined.css'),
+    getFile('../src/main.css'),
     getFile('./template.html'),
   ])
     .then(([style, template]) => {

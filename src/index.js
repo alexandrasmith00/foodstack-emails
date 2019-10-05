@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter, Route } from 'react-router-dom';
 import Home from './Home';
 import emails from './emails';
-import './inlined.css';
+import './main.css';
 
 const App = () => (
   <div>

@@ -1,21 +1,12 @@
 import React from 'react';
 import Grid from '../Grid/Grid';
+import styles from './styles';
 
-const style = {
-  content: {
-    backgroundColor: 'white',
-    padding: '20px',
-  },
-};
 
-function Body({ children }) {
-  return (
-    <Grid>
-      <Grid.Cell style={style.content}>
-        {children}
-      </Grid.Cell>
-    </Grid>
-  );
-}
-
-export default Body;
+export default ({ children }) => (
+  <Grid style={styles.body}>
+    <Grid.Cell>
+      {children}
+    </Grid.Cell>
+  </Grid>
+);
