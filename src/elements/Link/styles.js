@@ -5,6 +5,7 @@ export default {
     fontFamily: Typography.fontFamily,
     color: Colors[color],
     cursor: 'pointer',
+    textDecoration: 'none',
     ...style,
   }),
 };

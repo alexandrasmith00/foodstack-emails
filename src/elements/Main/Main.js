@@ -15,7 +15,7 @@ export default (props) => {
   } = props;
 
   return (
-    <center style={styles.page(pageStyles, align)}>
+    <center style={styles.page(pageStyles, align)} className="email-page">
       <Grid style={{ ...styles.container, ...containerStyles }}>
         {children}
       </Grid>

@@ -13,13 +13,10 @@ export default () => (
       <Para fontStyles={{ fontWeight: '600' }}>
         Click the link below to reset your password.
       </Para>
-      <Button>
+      <Button href={`{{ this.resetPasswordLink }}`}>
         Reset Password
       </Button>
     </Body>
     <Footer />
   </Main>
 );
-
-// how to refer to a sg variable:
-// {`{{ name }}`}

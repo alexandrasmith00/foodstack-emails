@@ -8,8 +8,10 @@ const logoSrc = 'https://marketing-image-production.s3.amazonaws.com/uploads/65a
 
 function Header() {
   return (
-    <Grid style={styles.header}>
-      <Img style={styles.logo} src={logoSrc} alt="logo" />
+    <Grid style={styles.header} className="header-grid">
+      <Grid.Cell className="header-cell">
+        <Img style={styles.logo} src={logoSrc} alt="logo" className="header-logo" />
+      </Grid.Cell>
     </Grid>
   );
 }

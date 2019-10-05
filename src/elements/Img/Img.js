@@ -1,22 +1,12 @@
 import React from 'react';
+import styles from './styles';
 
-const imgStyle = {
-
-  img: {
-    outline: 'none',
-    textDecoration: 'none',
-    border: 'none',
-    display: 'block',
-  },
-
-};
-
-function Img({ src, alt, className, style = {} }) {
+function Img({ src, alt, className = '', style = {} }) {
   return (
     <img
       src={src}
       alt={alt}
-      style={{ ...imgStyle.img, ...style }}
+      style={{ ...styles.img, ...style }}
       className={className}
     />
   );

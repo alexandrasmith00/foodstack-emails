@@ -1,25 +1,25 @@
-import { Borders, Colors } from '../../styles';
-
-const footerFontSize = '12px';
+import { Borders, Colors, Typography } from '../../styles';
 
 export default {
   footer: {
     margin: '32px auto',
   },
   content: {
+    ...Typography.font,
+    fontSize: Typography.size.small,
     borderTop: Borders.regular,
     color: Colors.primary,
     paddingTop: '32px',
     width: '100%',
     margin: 'auto',
-    fontSize: footerFontSize,
     textAlign: 'center',
   },
   link: {
-    fontSize: footerFontSize,
+    fontSize: Typography.size.small,
   },
   subfooter: {
-    fontSize: footerFontSize,
+    ...Typography.font,
+    fontSize: Typography.size.small,
     paddingTop: '8px',
     textAlign: 'center',
     color: Colors.gray,
