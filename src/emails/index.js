@@ -1,10 +1,11 @@
 import ExampleEmail from './ExampleEmail/ExampleEmail';
 import ForgotPasswordEmail from './ForgotPasswordEmail/ForgotPasswordEmail';
+import NoAssociatedAccountEmail from './NoAssociatedAccountEmail/NoAssociatedAccountEmail';
 
 export default {
-  example: {
-    name: 'Example',
-    email: ExampleEmail,
+  noAssociatedAccount: {
+    name: 'Forgot Password - No Account',
+    email: NoAssociatedAccountEmail,
   },
   forgotPassword: {
     name: 'Forgot Password',

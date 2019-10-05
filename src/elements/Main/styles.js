@@ -4,7 +4,7 @@ export default {
   page: (pageStyles, align) => ({
     textAlign: 'align',
     padding: Sizing.padding,
-    paddingTop: '64px',
+    paddingTop: '32px',
     ...Typography.font,
     ...pageStyles, // overwrite with any passed styles
   }),

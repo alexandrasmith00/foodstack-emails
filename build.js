@@ -1,5 +1,7 @@
 const chalk = require('chalk');
 const fs = require('fs');
+const minify = require('html-minifier').minify;
+const options = require('./minify').options;
 const createEmail = require('./server/createEmail');
 const emails = require('./lib/emails').default;
 
@@ -22,7 +24,7 @@ const generateEmails = () => {
 
   Object.keys(emails).forEach((name, index) => {
     createEmail(name, {}).then((email) => {
-      return storeEmail(name, email);
+      return storeEmail(name, minify(email, options));
     })
   });
 }
