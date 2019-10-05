@@ -1,7 +1,6 @@
 import React from 'react';
-
-import Grid from '../layout/Grid';
-import Img from './Img';
+import Grid from '../Grid/Grid';
+import Img from '../Img/Img';
 
 const logoSrc = 'https://s3-eu-west-1.amazonaws.com/sentisis-images/github_public/react-emails/logo.png';
 
@@ -27,4 +26,3 @@ function Header() {
 }
 
 export default Header;
-

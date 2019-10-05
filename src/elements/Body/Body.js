@@ -1,14 +1,11 @@
 import React from 'react';
-
-import Grid from '../layout/Grid';
+import Grid from '../Grid/Grid';
 
 const style = {
-
   content: {
     backgroundColor: 'white',
     padding: '20px',
   },
-
 };
 
 function Body({ children }) {
@@ -22,4 +19,3 @@ function Body({ children }) {
 }
 
 export default Body;
-

@@ -4,6 +4,7 @@
   "private": true,
   "main": "./src/index.js",
   "devDependencies": {
+    "@babel/plugin-proposal-export-default-from": "^7.5.2",
     "babel-cli": "^6.24.1",
     "babel-eslint": "7.0.0",
     "babel-plugin-transform-es2015-modules-commonjs": "^6.26.0",

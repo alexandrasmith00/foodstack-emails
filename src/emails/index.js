@@ -1,13 +1,13 @@
-import ForgotPasswordEmail from './ForgotPasswordEmail';
-import AnotherEmail from './AnotherEmail';
+import ExampleEmail from './ExampleEmail/ExampleEmail';
+import ForgotPasswordEmail from './ForgotPasswordEmail/ForgotPasswordEmail';
 
 export default {
+  example: {
+    name: 'Example',
+    email: ExampleEmail,
+  },
   forgotPassword: {
     name: 'Forgot Password',
     email: ForgotPasswordEmail,
-  },
-  anotherEmail: {
-    name: 'Another Email',
-    email: AnotherEmail,
   },
 };

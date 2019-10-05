@@ -1,6 +1,5 @@
 import React from 'react';
-
-import Grid from '../layout/Grid';
+import Grid from '../Grid/Grid';
 
 const style = {
 
@@ -39,4 +38,3 @@ function Footer() {
 }
 
 export default Footer;
-
