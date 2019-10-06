@@ -1,5 +1,7 @@
 import ForgotPasswordEmail from './ForgotPasswordEmail/ForgotPasswordEmail';
 import NoAssociatedAccountEmail from './NoAssociatedAccountEmail/NoAssociatedAccountEmail';
+import CustomerInviteEmail from './CustomerInviteEmail/CustomerInviteEmail';
+import AvailabilityEmail from './AvailabilityEmail/AvailabilityEmail';
 
 export default {
   noAssociatedAccount: {
@@ -9,5 +11,13 @@ export default {
   forgotPassword: {
     name: 'Forgot Password',
     email: ForgotPasswordEmail,
+  },
+  customerInvite: {
+    name: 'Customer Invite',
+    email: CustomerInviteEmail,
+  },
+  availabilityEmail: {
+    name: 'Availability Email',
+    email: AvailabilityEmail,
   },
 };
