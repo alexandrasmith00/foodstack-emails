@@ -1,5 +1,5 @@
 import React from 'react';
-import { Main, Header, Title, Para, Body, Footer, Button, Text } from '../../elements';
+import { Section, Main, Header, Title, Para, Body, Footer, Button, Text } from '../../elements';
 
 export default () => (
   <Main>
@@ -18,10 +18,13 @@ export default () => (
       <Title top="24px">Header #1 (default)</Title>
       <Title top="24px" size="3">Header #3</Title>
 
-      <Para color="gray">
-        Paragraphs can come in gray or regular font colors.  They can be
-        nudged right up against the header up there.
-      </Para>
+      <Section bg="primary">
+        <Para color="white">
+          Paragraphs can come in gray or regular font colors.  They can be
+          nudged right up against the header up there.
+        </Para>
+      </Section>
+
       <Para style={{ fontWeight: '600' }} spacing="24px">
         You can pass in custom styles for the font. Notice how this
         paragraph has spacing around it.
@@ -38,5 +41,7 @@ export default () => (
 
     </Body>
     <Footer />
+    <Footer top="0px" border={false} />
+
   </Main>
 );
