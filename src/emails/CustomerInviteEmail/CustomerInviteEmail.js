@@ -24,7 +24,7 @@ export default () => (
           Enter this code after creating/logging into your account.
         </Para>
         <Title spacing="32px">
-          {`{{this.referralCode}}`}
+          {`{{this.invitationCode}}`}
         </Title>
         <Button href={"https://shop.foodstack.net"} color="primary" bottom="8px">
           Create Account or Login
