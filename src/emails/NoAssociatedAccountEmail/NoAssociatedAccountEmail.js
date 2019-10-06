@@ -1,5 +1,5 @@
 import React from 'react';
-import { Main, Header, Title, Para, List, Body, Footer, Text } from '../../elements';
+import { Main, Header, Title, Para, List, Body, Footer, Text, Button } from '../../elements';
 
 export default () => (
   <Main>
@@ -8,7 +8,7 @@ export default () => (
       <Title top="8px" bottom="16px">
         Your Password Reset Request
       </Title>
-      <Para color="gray" bottom="16px">
+      <Para color="gray" bottom="32px">
         There is no foodstack account associated with this e-mail. If you did
         not request to reset your password, you can ignore this e-mail.
       </Para>
@@ -19,6 +19,7 @@ export default () => (
           <Text style={{ fontWeight: 600 }}>Create a foodstack account</Text>
         </List>
       </Para>
+      <Button spacing="24px" size="large" align="left">Return to foodstack</Button>
     </Body>
     <Footer />
   </Main>

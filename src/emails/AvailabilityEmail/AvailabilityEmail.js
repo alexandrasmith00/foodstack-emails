@@ -5,9 +5,9 @@ export default () => (
   <Main>
     <Header />
     <Body>
-      <Title>{`{{ this.producerName }}`} Wholesale Availability</Title>
-      <Para>{`{{this.message}}`}.</Para>
-      <Button href={"https://shop.foodstack.net"}>
+      <Title bottom="32px">{`{{ this.producerName }}`} Wholesale Availability</Title>
+      <Para bottom="32px">{`{{this.message}}`}.</Para>
+      <Button size="large" href={"https://shop.foodstack.net"}>
         Create Your Order
       </Button>
     </Body>
