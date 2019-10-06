@@ -11,9 +11,9 @@ import styles from './styles';
  *   - top: spacing on top (i.e. '8px')
  *   - bottom: spacing on bottom (i.e. '16px')
  */
-export default ({ children, color, align, top, bottom, style = {} }) => (
-  <Grid style={styles.wrapper(top, bottom)}>
-    <h1 style={styles.title(style, color, align)} className="title-heading">
+export default ({ children, color, align, top, bottom, spacing, size, style = {} }) => (
+  <Grid style={styles.wrapper(top, bottom, spacing)}>
+    <h1 style={styles.title(style, color, align, size)} className="title-heading">
       {children}
     </h1>
   </Grid>
