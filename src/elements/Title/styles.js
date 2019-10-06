@@ -1,12 +1,14 @@
-import { Text } from '../../styles';
+import { Text, Colors, Typography } from '../../styles';
 
 export default {
-  wrapper: {
-    margin: 'auto',
-  },
-  title: {
+  wrapper: (top = 0, bottom = 0, spacing = null) => ({
+    margin: `${spacing || top} auto ${spacing || bottom} auto`,
+  }),
+  title: (style = {}, color = 'font', align = 'left', size = '1') => ({
     ...Text.title,
-    marginTop: '8px',
-    marginBottom: '16px',
-  },
+    ...style,
+    textAlign: align,
+    color: Colors[color],
+    fontSize: Typography.size[`header${size}`],
+  }),
 };

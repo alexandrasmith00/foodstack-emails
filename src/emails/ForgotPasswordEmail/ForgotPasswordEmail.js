@@ -5,15 +5,17 @@ export default () => (
   <Main>
     <Header />
     <Body>
-      <Title>Reset Your Password</Title>
-      <Para color="gray">
+      <Title bottom="16px">
+        Reset Your Password
+      </Title>
+      <Para color="gray" bottom="16px">
         You’re receiving this email because you’ve requested to
         reset your foodstack password.
       </Para>
-      <Para fontStyles={{ fontWeight: '600' }}>
+      <Para style={{ fontWeight: '600' }} bottom="16px">
         Click the link below to reset your password.
       </Para>
-      <Button href={`{{ this.resetPasswordLink }}`}>
+      <Button href={`{{ this.resetPasswordLink }}`} top="16px">
         Reset Password
       </Button>
     </Body>

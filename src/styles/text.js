@@ -1,16 +1,16 @@
-import * as colors from './colors';
-import { fontFamily } from './typography';
+import * as Colors from './colors';
+import * as Typography from './typography';
 
 export const title = {
-  fontFamily,
-  color: colors.font,
-  fontSize: '24px',
+  margin: 0,
+  fontFamily: Typography.fontFamily,
+  color: Colors.font,
+  fontSize: Typography.size.header1,
   fontWeight: 'bold'
 };
 
 export const paragraph = {
-  fontFamily,
-  color: colors.gray,
-  fontSize: '16px',
-  fontWeight: 'normal',
+  ...Typography.font,
+  margin: 0,
+  color: Colors.gray,
 }
