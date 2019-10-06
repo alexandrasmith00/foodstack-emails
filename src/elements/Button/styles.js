@@ -1,4 +1,4 @@
-import { Colors, Borders, Typography, Buttons } from '../../styles';
+import { Typography, Buttons } from '../../styles';
 
 export default {
   wrapper: (top = 0, bottom = 0, spacing = null) => ({

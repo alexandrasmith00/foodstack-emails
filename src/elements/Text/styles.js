@@ -1,4 +1,4 @@
-import { Text, Typography, Colors } from '../../styles';
+import { Typography, Colors } from '../../styles';
 
 export default {
   text: (style, color = 'font') => ({

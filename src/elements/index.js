@@ -8,6 +8,7 @@ import Link from './Link/Link';
 import List from './List/List';
 import Main from './Main/Main';
 import Para from './Para/Para';
+import Section from './Section/Section';
 import Text from './Text/Text';
 import Title from './Title/Title';
 
@@ -22,6 +23,7 @@ export {
   List,
   Main,
   Para,
+  Section,
   Text,
   Title,
 };

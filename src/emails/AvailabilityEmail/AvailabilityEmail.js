@@ -1,5 +1,5 @@
 import React from 'react';
-import { Main, Header, Title, Para, Body, Footer, Button, List, Text } from '../../elements';
+import { Main, Header, Title, Para, Body, Footer, Button } from '../../elements';
 
 export default () => (
   <Main>
