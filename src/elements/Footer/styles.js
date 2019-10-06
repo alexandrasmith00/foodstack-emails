@@ -1,15 +1,15 @@
-import { Borders, Colors, Typography } from '../../styles';
+import { Borders, Colors, Typography, Sizing } from '../../styles';
 
 export default {
   footer: {
-    margin: '32px auto',
+    margin: `${Sizing.content.below} auto auto auto`,
   },
   content: {
     ...Typography.font,
     fontSize: Typography.size.small,
     borderTop: Borders.regular,
     color: Colors.primary,
-    paddingTop: '32px',
+    paddingTop: Sizing.content.below,
     width: '100%',
     margin: 'auto',
     textAlign: 'center',

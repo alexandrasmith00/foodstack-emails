@@ -1,9 +1,11 @@
+import { Sizing } from '../../styles';
+
 export default {
   header: {
-    margin: '32px auto',
+    margin: `${Sizing.content.above} auto`,
   },
   logo: {
-    width: '30%',
+    maxHeight: '36px',
     marginLeft: '-11px',
   }
 };

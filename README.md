@@ -10,6 +10,9 @@ $ npm run dev
 
 Add any new emails into the emails folder.  Make sure to add the email to `emails/index.js` by following naming conventions inside file.
 
+### Creating a new email
+
+
 
 ### Building HTML
 To generate all of the html emails, as defined in `emails/index.js`

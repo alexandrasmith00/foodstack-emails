@@ -1,10 +1,13 @@
 import { Text, Colors } from '../../styles';
 
 export default {
-  paragraph: (styles, color) => ({
+  wrapper: (top = 0, bottom = 0, spacing = null) => ({
+    margin: `${spacing || top} auto ${spacing || bottom} auto`,
+  }),
+  paragraph: (styles = {}, color = 'font', align = 'left') => ({
     ...Text.paragraph,
     ...styles,
     color: Colors[color],
-    margin: '8px auto',
+    textAlign: align,
   }),
 };
