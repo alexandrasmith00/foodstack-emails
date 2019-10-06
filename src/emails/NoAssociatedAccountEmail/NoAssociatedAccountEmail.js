@@ -1,5 +1,5 @@
 import React from 'react';
-import { Main, Header, Title, Para, Body, Footer, Button } from '../../elements';
+import { Main, Header, Title, Para, List, Body, Footer, Text } from '../../elements';
 
 export default () => (
   <Main>
@@ -12,10 +12,10 @@ export default () => (
       </Para>
       <Para fontStyles={{ fontWeight: '600' }}>
         To fix this, try one of the following:
-        <ul>
-          <li>Make sure you have a foodstack account.</li>
-          <li>Create a foodstack account.</li>
-        </ul>
+        <List>
+          <Text style={{ fontWeight: 600 }}>Make sure you have an existing account</Text>
+          <Text style={{ fontWeight: 600 }}>Create a foodstack account</Text>
+        </List>
       </Para>
     </Body>
     <Footer />

@@ -24,6 +24,7 @@ const generateEmails = () => {
 
   Object.keys(emails).forEach((name, index) => {
     createEmail(name, {}).then((email) => {
+      //
       return storeEmail(name, minify(email, options));
     })
   });
