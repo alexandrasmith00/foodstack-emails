@@ -5,6 +5,8 @@ export default {
     margin: `${spacing || top} auto ${spacing || bottom} auto`,
   }),
   title: (style = {}, color = 'font', align = 'left', size = '1') => ({
+    margin: 0,
+    msoLineHeightRule: 'exactly',
     ...Text.title,
     ...style,
     textAlign: align,

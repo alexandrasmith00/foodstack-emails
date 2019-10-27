@@ -5,6 +5,7 @@ export default {
     margin: `${spacing || top} auto ${spacing || bottom} auto`,
   }),
   paragraph: (styles = {}, color = 'font', align = 'left') => ({
+    margin: 0,
     ...Text.paragraph,
     ...styles,
     color: Colors[color],

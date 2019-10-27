@@ -1,14 +1,14 @@
 import React from 'react';
-import { Main, Header, Title, Para, Body, Footer, Button } from '../../elements';
+import { Main, Title, Para, Body, Footer } from '../../elements';
 
 export default () => (
   <Main>
     <Body>
-      <Title bottom="32px">
+      <Title bottom="32px" size="3">
         {`{{ this.producerName }}`} Wholesale Availability for {`{{ this.period }}`}
       </Title>
-      <Para bottom="32px">{`{{this.message}}`}.</Para>
+      <Para bottom="32px">{`{{{this.message}}}`}</Para>
     </Body>
-    <Footer />
+    <Footer unsubscribe />
   </Main>
 );
