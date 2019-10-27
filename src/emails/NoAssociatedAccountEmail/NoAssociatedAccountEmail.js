@@ -14,11 +14,11 @@ export default () => (
       </Para>
       <Para style={{ fontWeight: '600' }}>
         To fix this, try one of the following:
-        <List>
-          <Text style={{ fontWeight: 600 }}>Make sure you have an existing account</Text>
-          <Text style={{ fontWeight: 600 }}>Create a foodstack account</Text>
-        </List>
       </Para>
+      <List>
+        <Text style={{ fontWeight: 600 }}>Make sure you have an existing account</Text>
+        <Text style={{ fontWeight: 600 }}>Create a foodstack account</Text>
+      </List>
       <Button spacing="24px" size="large" align="left">Return to foodstack</Button>
     </Body>
     <Footer />
